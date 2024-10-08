@@ -5,7 +5,7 @@ namespace Model
 {
 	public enum TableName
 	{
-		Account2
+		Account
 	}
 
 	public abstract class Base : ITableEntity

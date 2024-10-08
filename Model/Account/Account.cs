@@ -3,7 +3,7 @@
 	public class Account : Base
 	{ 
 		public Account()
-			: base(TableName.Account2)
+			: base(TableName.Account)
 		{
 		}
 
