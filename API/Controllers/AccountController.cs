@@ -6,13 +6,11 @@ namespace API.Controllers
 	[Route("account")]
 	public class AccountController : Controller
 	{
-		private readonly IConfiguration _configuration;
 		private readonly ILogger<AccountController> _logger;
 		private readonly Business.IAccount _accountBusiness;
 
-		public AccountController(IConfiguration configuration, ILogger<AccountController> logger, Business.IAccount accountBusiness)
+		public AccountController(ILogger<AccountController> logger, Business.IAccount accountBusiness)
 		{
-			_configuration = configuration;
 			_logger = logger;
 			_accountBusiness = accountBusiness;
 		}
