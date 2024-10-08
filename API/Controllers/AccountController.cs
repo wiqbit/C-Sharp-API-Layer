@@ -1,8 +1,5 @@
 ﻿using API.ViewModel;
-using API.ViewModel.Request;
-using API.ViewModel.Response;
 using Microsoft.AspNetCore.Mvc;
-using Model.Account;
 
 namespace API.Controllers
 {
@@ -21,7 +18,7 @@ namespace API.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Add([FromBody] AddAccount viewModel)
+		public async Task<IActionResult> Add([FromBody] ViewModel.Request.AddAccount viewModel)
 		{
 			try
 			{
